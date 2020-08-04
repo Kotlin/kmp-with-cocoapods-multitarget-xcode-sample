@@ -1,6 +1,6 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform").version("1.4.255-SNAPSHOT")
-    id("org.jetbrains.kotlin.native.cocoapods").version("1.4.255-SNAPSHOT")
+    id("org.jetbrains.kotlin.multiplatform").version("1.4.0-rc")
+    id("org.jetbrains.kotlin.native.cocoapods").version("1.4.0-rc")
 }
 
 group = "com.example"
