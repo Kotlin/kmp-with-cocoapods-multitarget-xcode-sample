@@ -1,25 +1,23 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform").version("1.4.255-SNAPSHOT")
-    id("org.jetbrains.kotlin.native.cocoapods").version("1.4.255-SNAPSHOT")
-}
-
-group = "com.example"
-version = "1.0"
-
-repositories {
-    mavenLocal()
-    jcenter()
-    maven { setUrl("https://dl.bintray.com/kotlin/kotlinx.html/") }
+    kotlin("multiplatform")
+    kotlin("native.cocoapods")
 }
 
 group = "org.jetbrains.kotlin.sample.native"
 version = "1.0"
 
 kotlin {
-    ios()
+    iosX64()
+    iosArm64()
+    iosSimulatorArm64()
     macosX64()
-    tvos()
-    watchos()
+    macosArm64()
+    tvosX64()
+    tvosArm64()
+    tvosSimulatorArm64()
+    watchosX64()
+    watchosArm64()
+    watchosSimulatorArm64()
 
     cocoapods {
         summary = "Kotlin CocoaPods library"
@@ -31,5 +29,9 @@ kotlin {
         osx.deploymentTarget = "10.15"
         tvos.deploymentTarget = "13.4"
         watchos.deploymentTarget = "6.2"
+
+        framework {
+            isStatic = true
+        }
     }
 }

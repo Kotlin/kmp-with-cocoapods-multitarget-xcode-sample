@@ -25,7 +25,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>ru.spbau.mit.WatchosApp.watchkitapp</string>
+			<string>org.jetbrains.kotlin.samples.WatchosApp.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
